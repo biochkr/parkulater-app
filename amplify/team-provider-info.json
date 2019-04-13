@@ -1,0 +1,19 @@
+{
+    "parkulater": {
+        "awscloudformation": {
+            "AuthRoleName": "parkulater-app-20190413164233-authRole",
+            "UnauthRoleArn": "arn:aws:iam::663540413175:role/parkulater-app-20190413164233-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::663540413175:role/parkulater-app-20190413164233-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "parkulater-app-20190413164233-deployment",
+            "UnauthRoleName": "parkulater-app-20190413164233-unauthRole",
+            "StackName": "parkulater-app-20190413164233",
+            "StackId": "arn:aws:cloudformation:us-east-1:663540413175:stack/parkulater-app-20190413164233/cf80a620-5e45-11e9-a85c-12a109124258"
+        },
+        "categories": {
+            "auth": {
+                "cognito96cd2110": {}
+            }
+        }
+    }
+}

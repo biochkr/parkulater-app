@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"cognito96cd2110": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"analytics": {
+		"parkulaterApp": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
