@@ -1,0 +1,20 @@
+{
+    "appName": "parkulater",
+    "roleName": "pinpointLambdaRole6f37770c",
+    "cloudWatchPolicyName": "cloudWatchPolicy6f37770c",
+    "pinpointPolicyName": "pinpointPolicy6f37770c",
+    "authPolicyName": "pinpoint_amplify_6f37770c",
+    "unauthPolicyName": "pinpoint_amplify_6f37770c",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

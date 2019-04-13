@@ -12,6 +12,8 @@ import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
 
+import MainMap from '../components/find-spots/MainMap.js'
+
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,

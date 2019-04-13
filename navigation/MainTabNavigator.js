@@ -6,13 +6,29 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import MainMap from '../components/find-spots/MainMap.js';
+import ReservationForm from '../components/find-spots/ReservationForm.js';
+import ReserveDetails from '../components/reserved-spots/ReserveDetails.js'
 
 const HomeStack = createStackNavigator({
-  Home: HomeScreen,
+  Map: {
+    screen: MainMap,
+    path: "../components/find-spots/MainMap.js",
+    navigationOptions: ({ navigation }) => ({
+      title: `Where to?`,
+    })
+  },
+  Reserved: {
+    screen: ReservationForm,
+    path: "../components/find-spots/ReservationForm.js",
+    navigationOptions: ({ navigation }) => ({
+      title: `Lot Reservation`,
+    })
+  }
 });
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+  tabBarLabel: 'Find Spots',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -26,11 +42,11 @@ HomeStack.navigationOptions = {
 };
 
 const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+  ReserveDetails: ReserveDetails,
 });
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Reserved Spots',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}

@@ -24,7 +24,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.parkulater.mlh2019",
+      "config": {
+        "googleMapsApiKey": "API_KEY"
+      }
     },
     "packagerOpts": {
       "port": 8080
