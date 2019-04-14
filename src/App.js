@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import styles from './App.module.css';
+import ReservationList from './Components/ReservationList';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <ReservationList />
       </div>
     );
   }
